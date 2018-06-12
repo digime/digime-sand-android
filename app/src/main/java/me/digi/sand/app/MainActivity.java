@@ -80,10 +80,11 @@ public class MainActivity extends AppCompatActivity implements SDKListener,
         selectedStats = CAFileTimestampProcessor.StatsType.WEEKLY;
         dialog = new ProgressDialog(this);
 
-        final int keyID = Utils.selectAppropriateKeyFromResources();
-        if (keyID > 0) {
-            DigiMeClient.getDefaultKeyLoader().getStore().addPKCS12KeyFromResources(this, keyID, null, TextUtils.isEmpty(BuildConfig.ALTERNATE_PASS) ? "digime" : BuildConfig.ALTERNATE_PASS, null);
-        }
+        DigiMeClient.getDefaultKeyLoader().getStore().addPKCS12KeyFromAssets(this,
+                "CA_RSA_KEY.p12",
+                null,
+                ""/*your_p12_password*/,//add your p12 password here
+                null);
         DigiMeClient.minRetryPeriod = 600;
         DigiMeClient.maxRetryCount = 10;
         dgmClient.addListener(this);
