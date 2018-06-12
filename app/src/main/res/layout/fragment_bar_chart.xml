@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2009-2018 digi.me Limited. All rights reserved.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/backgroundColor"
+tools:context="me.digi.sand.app.BarChartFragment"
+tools:ignore="MissingPrefix">
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/offiste_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text=" "
+        android:textSize="@dimen/home_subtitle_text_size"
+        android:textAlignment="center"
+        fontPath="fonts/Lato-Regular.ttf"/>
+
+    <Button
+        android:id="@+id/hourly_activity"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_above="@id/offiste_label"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="@dimen/home_description_margin_left"
+        android:layout_marginEnd="@dimen/home_description_margin_right"
+        android:background="@color/buttonColor"
+        android:textColor="#000000"
+        android:text="@string/start_over"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        fontPath="fonts/Lato-Regular.ttf"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_above="@id/hourly_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:background="@color/backgroundColor">
+
+        <TextView
+            fontPath="fonts/Lato-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/stats"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/main_title_text_size" />
+
+        <TextView
+            android:id="@+id/stat_analysis"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_description_margin_bottom"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text=""
+            android:textSize="@dimen/home_subtitle_text_size"
+            fontPath="fonts/Lato-Light.ttf"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

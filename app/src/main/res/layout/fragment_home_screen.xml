@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2009-2018 digi.me Limited. All rights reserved.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:ignore="MissingPrefix">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        fontPath="fonts/Lato-Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/when_do_you_share"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/main_title_text_size" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/home_description_margin_bottom"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="@string/home_description"
+        android:textSize="@dimen/home_subtitle_text_size"
+        fontPath="fonts/Lato-Light.ttf"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/home_image_size"
+        android:layout_marginBottom="@dimen/home_image_margin_vertical"
+        android:layout_marginTop="31dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home_icon_large"/>
+
+</LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/get_started"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="@dimen/home_description_margin_left"
+        android:layout_marginEnd="@dimen/home_description_margin_right"
+        android:background="@color/buttonColor"
+        android:textColor="#000000"
+        android:text="@string/social_button"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        fontPath="fonts/Lato-Regular.ttf"/>
+
+    <TextView
+        android:layout_above="@id/get_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="@string/data_protection_warning"
+        android:textSize="@dimen/home_subtitle_text_size"
+        android:textAlignment="center"
+        fontPath="fonts/Lato-Bold.ttf"/>
+</RelativeLayout>
