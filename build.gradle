@@ -1,0 +1,32 @@
+/*
+ * Copyright (c) 2009-2018 digi.me Limited. All rights reserved.
+ */
+
+apply from: 'config/gradle/checkstyle.gradle'
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.15.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url "https://repository.sysdigi.net/m2/libs-release"}
+        maven { url "https://repository.sysdigi.net/m2/libs-sandbox"}
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com"}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2009-2018 digi.me Limited. All rights reserved.
+  -->
+
+<resources>
+    <dimen name="home_image_size">150dp</dimen>
+    <dimen name="home_image_margin_vertical">12dp</dimen>
+    <dimen name="home_description_margin_left">10dp</dimen>
+    <dimen name="home_description_margin_right">10dp</dimen>
+    <dimen name="home_description_margin_bottom">16dp</dimen>
+    <dimen name="home_subtitle_text_size">20sp</dimen>
+    <dimen name="main_title_text_size">35sp</dimen>
+</resources>

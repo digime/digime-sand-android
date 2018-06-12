@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2009-2018 digi.me Limited. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<me.digi.sand.app.adapters.NoScrollPager
+    android:id="@+id/main_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</me.digi.sand.app.adapters.NoScrollPager>
+</LinearLayout>

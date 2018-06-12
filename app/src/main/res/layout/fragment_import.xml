@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2009-2018 digi.me Limited. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context="me.digi.sand.app.ImportFragment"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        fontPath="fonts/Lato-Bold.ttf"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/importing"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="@dimen/main_title_text_size" />
+
+</LinearLayout>

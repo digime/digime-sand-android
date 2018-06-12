@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2009-2018 digi.me Limited. All rights reserved.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.digi.sand.app1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="me.digi.sand.app.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity android:name="me.digi.sand.app.MainActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="me.digi.sdk.AppName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="me.digi.sdk.AppId"
+            android:value="@string/APP_ID" />
+        <meta-data
+            android:name="me.digi.sdk.Contracts"
+            android:value="@string/CONTRACT_ID"/>
+    </application>
+
+</manifest>

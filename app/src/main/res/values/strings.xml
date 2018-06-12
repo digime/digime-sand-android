@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2009-2018 digi.me Limited. All rights reserved.
+  -->
+
+<resources>
+    <string name="app_name">SAND</string>
+    <string name="social_button">Get started</string>
+    <string name="survey_title">Survey</string>
+    <string name="survey_description">Submit your feedback on consent sharing.\nThis is the part when you gave permission to share you data via digi.me.</string>
+    <string name="survey_question">How happy were you sharing the data, even when you knew it would be processed outside of your device?</string>
+    <string name="when_do_you_share">When do you share?</string>
+    <string name="home_description">Are you a Monday Moaner, a Wednesday Wonderer, a Friday Fighter, a Sunday Slumberer …?</string>
+    <string name="data_protection_warning">You don\'t even need to give us access to your social accounts as we use digi.me to protect your data.</string>
+    <string name="install_digime_title">You need to install digi.me first</string>
+    <string name="install_digi_me">Install digi.me</string>
+    <string name="install_description_text">Use digi.me to protect your data. You get to control what data is shared and with who</string>
+    <string name="install_directions">1. Add your services to digi.me\n2. Come back here\n3. Click open to authorize access to your last 3 months social posts</string>
+    <string name="importing">Importing …</string>
+    <string name="stats">Stats</string>
+    <string name="offsite_notice">We need to analyse your content using our servers</string>
+    <string name="view_hourly_activity">View posts per hour</string>
+    <string name="submit">Submit</string>
+    <string name="skip">Skip</string>
+    <string name="start_over">Start over</string>
+    <string name="concat_text"> is your day!</string>
+    <string name="rating_scale">(1 not happy, 5 very happy)</string>
+    <string name="why">Why?</string>
+
+</resources>
